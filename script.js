@@ -51,7 +51,7 @@ fetch('footer.html')
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
             });
-
+//script for aos effect education section
             // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize AOS
@@ -63,21 +63,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //header menu toggle javascript
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('mobile-menu-toggle');
-    const primaryMenu = document.getElementById('primary-menu');
-  
-    menuToggle.addEventListener('click', () => {
-      // Toggle the 'show' class
-      primaryMenu.classList.toggle('show');
-  
-      // Update aria-expanded for accessibility
-      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', !isExpanded);
+  //responsive header menu toggle javascript
+
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const navigation = document.getElementById("site-navigation");
+    const menuItems = document.querySelectorAll("#primary-menu .menu-item a"); // Select all menu links
+
+    menuToggle.addEventListener("click", () => {
+        navigation.classList.toggle("active");
     });
-  });
+
+    // Close the menu when a menu item is clicked
+    menuItems.forEach(item => {
+        item.addEventListener("click", () => {
+            if (navigation.classList.contains("active")) {
+                navigation.classList.remove("active");
+            }
+        });
+    });
+});
+
+
+
+
+
   
   
 
