@@ -496,6 +496,93 @@ ul#primary-menu {
 ul#primary-menu.show {
     display: flex; /* Show the menu */
   }
-
-   
+  section {
+    padding: 50px 0px;
+}
+  .HeroContainer {
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.ButtonContainer {
+    flex-direction: column;
+    gap: 45px;
+}
+.sectiontitle {
+    text-align: center;
+    font-size: 40px;
+}
+.SkillsSectionContainer {
+    flex-direction: column;
+}
+.SkillsBgImgWrapper {
+    width: 22%;
+    bottom: -1%;
+}
+.ProjectsContainer {
+    grid-template-columns: 1fr;
+}
+.ProjectName {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.ProjectDetails {
+    font-size: 12px;
+    width: 100%;
+    line-height: 1.4;
+}
+.SeeMoreBtn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+.ExperienceWrapper {
+    gap: 40px;
+}
+.Designation {
+    font-size: 12px;
+}
+.CompanyInfo {
+    font-size: 12px;
+    line-height: 1.8;
+}
+.JobDescription {
+    font-size: 12px;
+}
+.EducationBgImgWrapper {
+    width: 22%;
+}
+.EducationInfoWrapper {
+    flex-direction: column;
+}
+.EducationCard {
+    width: 80%;
+    padding: 55px 30px;
+}
+.Qualification {
+    font-size: 14px;
+}
+.Institute {
+    font-size: 12px;
+}
+.educationIconWrapper {
+    top: 6%;
+}
+.Contactmetitle {
+    top: -90px;
+    width: 75%;
+}
+.EmailandPhoneWrapper {
+    flex-direction: column;
+}
+.ContactContentWrapper {
+    gap: 40px;
+}
+.SocialMediaWrapper {
+    bottom: -5%;
+    width: 50%;
+}
+.footertitle {
+    font-size: 30px;
+}
 }
