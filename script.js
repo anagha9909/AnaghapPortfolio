@@ -65,16 +65,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //responsive header menu toggle javascript
 
+// document.addEventListener("DOMContentLoaded", () => {
+//     const menuToggle = document.getElementById("mobile-menu-toggle");
+//     const navigation = document.getElementById("site-navigation");
+//     const menuItems = document.querySelectorAll("#primary-menu .menu-item a"); // Select all menu links
+
+//     menuToggle.addEventListener("click", () => {
+//         navigation.classList.toggle("active");
+//     });
+
+//     // Close the menu when a menu item is clicked
+//     menuItems.forEach(item => {
+//         item.addEventListener("click", () => {
+//             if (navigation.classList.contains("active")) {
+//                 navigation.classList.remove("active");
+//             }
+//         });
+//     });
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("mobile-menu-toggle");
     const navigation = document.getElementById("site-navigation");
-    const menuItems = document.querySelectorAll("#primary-menu .menu-item a"); // Select all menu links
+    const menuItems = document.querySelectorAll("#primary-menu .menu-item a");
+
+    // If elements are not found, log an error
+    if (!menuToggle) {
+        console.error("Error: #mobile-menu-toggle not found");
+        return;
+    }
+
+    if (!navigation) {
+        console.error("Error: #site-navigation not found");
+        return;
+    }
 
     menuToggle.addEventListener("click", () => {
         navigation.classList.toggle("active");
     });
 
-    // Close the menu when a menu item is clicked
     menuItems.forEach(item => {
         item.addEventListener("click", () => {
             if (navigation.classList.contains("active")) {
