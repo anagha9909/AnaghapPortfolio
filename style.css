@@ -2,6 +2,7 @@ body {
     background-color: #31333b;
     color: #fff;
     margin: 0;
+    font-family: Helvetica, "Helvetica Neue";
 }
 li, ul {
     list-style: none;
@@ -20,17 +21,16 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 15px;
-    padding: 1rem 2rem;
+    padding: 25px 20px;
     margin: 0 auto;
     left: 0;
     right: 0;
     z-index: 999;
     position: fixed;
+    background: #31333b;
+    box-shadow: 0 3px 10px #f8c76b5e;
 }
-#masthead.transparent {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-}
+
 .menu-toggle {
     display: none;
 }
@@ -46,7 +46,7 @@ ul#primary-menu {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 15px;
+    gap: 70px;
 }
 li.menu-item a {
     color: #fff;
@@ -99,10 +99,17 @@ section {
     color: #f8c76b;
     font-weight: 700;
 }
+.CompanyInfo {
+    font-size: 16px;
+    line-height: 1.8;
+}
+.experienceMonth {
+    font-size: 16px;
+    line-height: 1.7;
+}
 .Designation {
     font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 500;
     line-height: 1.6;
     text-transform: uppercase;
 }
@@ -124,7 +131,6 @@ a.PrimaryButton:hover {
     background: #f8c76b;
     color: #000;
     transform: scale(1.2);
-    letter-spacing: 1px;
 }
 .sectiontitle {
     font-size: 48px;
@@ -296,7 +302,7 @@ a.PrimaryButton:hover {
     left: 75px;
     width: 15px;
     height: 15px;
-    background-color: #ffaa00;
+    background-color: #f8c76b;
     border-radius: 50%;
 }
 .YearWrapper {
@@ -323,8 +329,16 @@ a.PrimaryButton:hover {
     position: absolute;
     top: 24px;
     left: 80px;
-    height: calc(100% - -80px);
+    height: calc(100% - -108px);
     border: 1px solid #fff;
+}
+.JobDescription {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    margin-top: 5px;
 }
 .EducationInfoWrapper {
     display: flex;
@@ -354,40 +368,22 @@ a.PrimaryButton:hover {
     top: 65%;
     right: 5%;
 }
-/* .EducationCard::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -5px;
-    left: -5px;
-    height: 30px;
-    background: var(--event-card-color, #d3a83c);
-    width: 30px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-out;
-}
-.EducationCard:hover:before {
-    transform: scale(35);
-}
-.EducationCard:hover {
-    color:#000;
-} */
+
 .Qualification {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 2.2;
     font-weight: 600;
 }
 .AcademicYear {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.4;
 }
 .Institute {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 1.4;
+    margin-top: 5px;
 }
 .ContactMe {
     border-top: 3px solid #d3a83c;
