@@ -140,7 +140,8 @@ a.PrimaryButton:hover {
 .sectioncontent {
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.4;
+    text-align: justify;
 }
 .line {
     width: 44px;
@@ -187,6 +188,15 @@ a.PrimaryButton:hover {
     font-weight: 700;
     padding-top: 20px;
     text-align: center;
+}
+.Skills {
+    position: relative;
+}
+.SkillsBgImgWrapper {
+    position: absolute;
+    width: 12%;
+    right: 5%;
+    bottom: -10%;
 }
 .ProjectsContainer {
     display: grid;
@@ -304,6 +314,7 @@ a.PrimaryButton:hover {
     height: 15px;
     background-color: #f8c76b;
     border-radius: 50%;
+    box-shadow: 0 0 10px 5px rgba(248, 199, 107, 0.5); 
 }
 .YearWrapper {
     position: relative;
@@ -339,6 +350,16 @@ a.PrimaryButton:hover {
     letter-spacing: 0.2px;
     text-align: justify;
     margin-top: 5px;
+}
+.Education {
+    position: relative;
+    margin-top: 60px;
+}
+.EducationBgImgWrapper {
+    position: absolute;
+    width: 8%;
+    left: 1%;
+    margin-top: 10px;
 }
 .EducationInfoWrapper {
     display: flex;
@@ -444,6 +465,7 @@ a.PrimaryButton:hover {
     color: #f2c268;
     font-weight: 400;
 }
+
 /*Mobile responsive styles*/
 @media (max-width: 768px) {
     .menu-toggle {
