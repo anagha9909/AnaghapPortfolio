@@ -99,20 +99,14 @@ section {
     color: #f8c76b;
     font-weight: 700;
 }
-.CompanyInfo {
-    font-size: 16px;
-    line-height: 1.8;
-}
-.experienceMonth {
-    font-size: 16px;
-    line-height: 1.7;
-}
-.Designation {
+.HeroSubtitle {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 2px;
     line-height: 1.6;
     text-transform: uppercase;
 }
+
 .ButtonContainer {
     display: flex;
     gap: 20px;
@@ -343,6 +337,20 @@ a.PrimaryButton:hover {
     height: calc(100% - -108px);
     border: 1px solid #fff;
 }
+.CompanyInfo {
+    font-size: 16px;
+    line-height: 1.8;
+}
+.experienceMonth {
+    font-size: 16px;
+    line-height: 1.7;
+}
+.Designation {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
 .JobDescription {
     font-size: 14px;
     line-height: 1.6;
@@ -485,6 +493,7 @@ a.PrimaryButton:hover {
     top: 0;
 }
 
+
 /* Make the navigation take full screen */
 #site-navigation {
     position: fixed;
@@ -537,6 +546,12 @@ li.menu-item a:hover {
     left: 0;
     right: 0;
 }
+.HeroTitle {
+    font-size: 36px;
+}
+.HeroSubtitle {
+    font-size: 16px;
+}
 .ButtonContainer {
     flex-direction: column;
     gap: 45px;
@@ -544,6 +559,15 @@ li.menu-item a:hover {
 .sectiontitle {
     text-align: center;
     font-size: 40px;
+}
+.sectioncontent {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+}
+.line {
+    width: 175px;
 }
 .SkillsSectionContainer {
     flex-direction: column;
