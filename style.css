@@ -593,18 +593,29 @@ li.menu-item a:hover {
     border-radius: 6px;
     font-size: 12px;
 }
-.ExperienceWrapper {
-    gap: 40px;
+.experienceTitle {
+    left: 0;
+    right: 0;
+}
+.ExperienceBullet {
+    display: none;
+}
+.YearWrapper {
+    display: none;
 }
 .Designation {
-    font-size: 12px;
+    font-size: 16px;
 }
 .CompanyInfo {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.8;
+}
+.experienceMonth {
+    font-size: 16px;
 }
 .JobDescription {
     font-size: 12px;
+    text-align: left;
 }
 .EducationBgImgWrapper {
     width: 22%;
