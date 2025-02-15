@@ -75,12 +75,11 @@ section {
     z-index: 1;
 }
 .hero {
-    background-image: url(images/portfoliobackground09\(1\).jpg);
+    background-image: url(images/portfoliobackground09\(2\).jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 90vh;
     top: 0;
-
 }
 .hero::before {
     content: "";
