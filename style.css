@@ -20,8 +20,9 @@ img {
 #masthead {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 15px;
-    padding: 25px 20px;
+    padding: 5px 20px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -30,7 +31,9 @@ img {
     background: #31333b;
     box-shadow: 0 3px 10px #f8c76b5e;
 }
-
+.site-branding {
+    margin-left: 50px;
+}
 .menu-toggle {
     display: none;
 }
