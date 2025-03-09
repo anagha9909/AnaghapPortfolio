@@ -1,3 +1,47 @@
+// Function to load header and footer and execute a callback after loading
+function loadComponent(file, elementId, callback) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+            if (callback) callback(); 
+        })
+        .catch(error => console.error(`Error loading ${file}:`, error));
+}
+
+// Load header and footer when the page loads
+document.addEventListener("DOMContentLoaded", function () {
+    loadComponent("header.html", "header-placeholder", function () {
+        // Now that the header is loaded, we can add event listeners
+        const menuToggle = document.getElementById("mobile-menu-toggle");
+        const navigation = document.getElementById("site-navigation");
+        const menuItems = document.querySelectorAll("#site-navigation a"); // Select menu links
+
+        if (!menuToggle || !navigation) {
+            console.error("Menu toggle button or navigation not found!");
+            return;
+        }
+
+        // Toggle menu on hamburger click
+        menuToggle.addEventListener("click", function () {
+            navigation.classList.toggle("toggled");
+            const isExpanded = navigation.classList.contains("toggled");
+            menuToggle.setAttribute("aria-expanded", isExpanded);
+        });
+
+        // Close menu when clicking a menu item
+        menuItems.forEach(item => {
+            item.addEventListener("click", function () {
+                navigation.classList.remove("toggled"); // Hide the menu
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    });
+
+    loadComponent("footer.html", "footer");
+});
+
+//projects section styles
 document.addEventListener("DOMContentLoaded", () => {
     const projectCards = document.querySelectorAll(".ProjectCard");
     const viewMoreBtn = document.querySelector(".ViewMoreProjectsBtn");
@@ -37,20 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-//footer script
-fetch('footer.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('footer').innerHTML = data;
-});
-//header script
 
-        // Load the header.html content into the #header-placeholder div
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-placeholder').innerHTML = data;
-            });
 //script for aos effect education section
             // Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", () => {
