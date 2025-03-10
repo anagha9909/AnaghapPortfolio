@@ -28,6 +28,10 @@ img {
     right: 0;
     z-index: 999999;
     position: fixed;
+    background: none;
+    transition: background-color 0.3s ease-in-out;
+}
+#masthead.scrolled {
     background: #31333b;
     box-shadow: 0 3px 10px #f8c76b5e;
 }
@@ -498,6 +502,7 @@ a.PrimaryButton:hover {
 #masthead {
     flex-direction: column;
     padding: 0 20px;
+    background: #31333b;
 }
 .site-branding {
     margin-left: -80%;
