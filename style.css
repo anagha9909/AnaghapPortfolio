@@ -157,7 +157,7 @@ a.PrimaryButton:hover {
     background-color: #d3a83c;
     margin-right: 8px;
 }
-.AboutContainer {
+.aboutContainer {
     display: flex;
     gap: 60px;
     margin-top: 15px;
@@ -572,10 +572,10 @@ a.PrimaryButton {
     line-height: 1.6;
     text-align: left;
 }
-.line {
+/* .line {
     width: 175px;
-}
-.AboutContainer {
+} */
+.aboutContainer {
     flex-direction: column;
     gap: 20px;
 }
