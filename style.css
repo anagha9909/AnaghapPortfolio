@@ -77,13 +77,14 @@ section {
     z-index: 1;
 }
 .hero {
-    background-image: url(images/portfoliobackground09\(2\).jpg);
+    /* background-image: url(images/portfoliobackground09\(2\).jpg); */
+    background-image: url(images/portfoliobanner05.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 90vh;
     top: 0;
 }
-.hero::before {
+/* .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -92,7 +93,7 @@ section {
     height: 100%;
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.741) 39.6%, rgba(0, 0, 0, 0) 100%);
     z-index: 0;
-}
+} */
 .HeroContainer {
     display: flex;
     flex-direction: column;
@@ -143,6 +144,7 @@ a.PrimaryButton:hover {
     font-size: 48px;
     font-weight: 700;
     line-height: 1.6;
+    text-align: left;
 }
 .sectioncontent {
     font-size: 16px;
@@ -151,19 +153,20 @@ a.PrimaryButton:hover {
     text-align: justify;
 }
 .line {
-    width: 44px;
+    width: 150px;
     height: 2px;
     margin-top: 6px;
     background-color: #d3a83c;
-    margin-right: 8px;
+    margin-right: 0px;
 }
 .aboutContainer {
     display: flex;
-    gap: 60px;
+    gap: 5px;
     margin-top: 15px;
 }
 .aboutSectionImage {
-    width: 65%;
+    width: 80%;
+    margin-left: 40px;
 } 
 .About .sectioncontent {
     line-height: 1.5;
@@ -572,12 +575,18 @@ a.PrimaryButton {
     line-height: 1.6;
     text-align: left;
 }
+.line {
+    display: none;
+}
 /* .line {
     width: 175px;
 } */
 .aboutContainer {
     flex-direction: column;
     gap: 20px;
+}
+.aboutContent {
+    order: 2;
 }
 .aboutSectionImage {
     width: 80%;
